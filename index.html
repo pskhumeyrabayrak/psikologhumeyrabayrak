@@ -3,102 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Psikolog Hümeyra Bayrak | Online Danışmanlık </title>
-    <!-- Profesyonel Yazı Tipleri -->
+    <title>Psikolog Hümeyra Bayrak | Online Psikolojik Danışmanlık</title>
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://googleapis.com" rel="stylesheet">
     <style>
-        * {
-            box-sizing: border-box;
-        }
+        * { box-sizing: border-box; scroll-behavior: smooth; }
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Montserrat', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #fbf9f4; /* Yumuşak Premium Krem Arka Plan */
-            color: #2d3b2f; /* Çok Koyu Doğal Yeşil-Siyah Yazı */
-            line-height: 1.7;
+            background-color: #f4f1ea; /* Hakiki Soft Krem Arka Plan */
+            color: #2d362e; 
+            line-height: 1.8;
+        }
+        /* Sabit ve Elit Üst Menü */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #f4f1ea;
+            border-bottom: 1px solid #e6e2d8;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+        }
+        nav a {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.8em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #4e5c4f;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #2a332b;
         }
         header {
-            background-color: #f6f3eb; /* Bir Ton Koyu Krem Geçişi */
-            padding: 120px 20px 100px 20px;
+            background-color: #d6ded1; /* Tam İstediğiniz Mat Adaçayı Yeşili */
+            padding: 160px 20px 140px 20px;
             text-align: center;
+            border-bottom: 1px solid #c4cbd0;
+            margin-top: 45px;
         }
         .nav-brand {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.6em;
-            letter-spacing: -0.5px;
+            font-family: 'Cinzel', serif;
+            font-size: 2.8em;
+            letter-spacing: 2px;
             font-weight: 400;
-            color: #243326; /* Ağır ve Saygın Orman Yeşili */
+            color: #2a332b;
             margin: 0;
         }
         .nav-subtitle {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.95em;
-            letter-spacing: 3px;
+            font-size: 0.9em;
+            letter-spacing: 4px;
             text-transform: uppercase;
-            color: #657e67; /* Estetik Adaçayı Yeşili */
-            margin-top: 15px;
+            color: #4e5c4f;
+            margin-top: 20px;
             font-weight: 500;
         }
         .container {
-            max-width: 750px;
-            margin: 60px auto;
-            padding: 0 25px;
+            max-width: 850px;
+            margin: 50px auto;
+            padding: 0 20px;
         }
-        .about-section {
+        .section-card {
             background: #ffffff;
             padding: 50px;
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(45, 59, 47, 0.03); /* Çok hafif derinlik */
-            border: 1px solid #efebe1;
+            border-radius: 4px;
+            box-shadow: 0 5px 20px rgba(78, 92, 79, 0.04);
+            border: 1px solid #e6e2d8;
+            margin-bottom: 50px;
+            padding-top: 80px; /* Menü kaymalarında başlık sıkışmasın diye */
+            margin-top: -60px;
         }
         h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.8em;
-            color: #243326;
+            font-family: 'Cinzel', serif;
+            font-size: 1.6em;
+            color: #344035;
             margin-top: 0;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
             font-weight: 400;
-            font-style: italic; /* Tayfun beyin sitesindeki gibi zarif eğik duruş */
+            letter-spacing: 1px;
+            border-bottom: 1px solid #d6ded1;
+            padding-bottom: 12px;
         }
         p {
             font-size: 1.05em;
-            color: #4a574b;
-            margin-bottom: 20px;
+            color: #414a42;
             font-weight: 300;
+        }
+        .grid-areas {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .area-item {
+            background: #fbfbfa;
+            padding: 20px;
+            border-left: 3px solid #d6ded1;
+            font-size: 1em;
+            color: #4e5c4f;
+            font-weight: 400;
+        }
+        /* Eğitim Listesi Tasarımı */
+        .edu-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .edu-item {
+            padding: 15px 0;
+            border-bottom: 1px dashed #efebe1;
+            font-weight: 400;
+            color: #414a42;
+        }
+        .edu-item span {
+            display: block;
+            font-size: 0.85em;
+            color: #7a8a7c;
+            margin-top: 5px;
+        }
+        /* Blog Tasarımı */
+        .blog-post {
+            margin-bottom: 35px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #f4f1ea;
+        }
+        .blog-title {
+            font-family: 'Cinzel', serif;
+            font-size: 1.2em;
+            color: #344035;
+            margin: 0 0 10px 0;
+            font-weight: 400;
+        }
+        .blog-date {
+            font-size: 0.8em;
+            color: #8fa091;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            display: block;
+        }
+        .btn-wrapper {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 40px;
         }
         .btn-randevu {
             display: inline-block;
-            background-color: #4c634e; /* Premium Mat Adaçayı */
+            background-color: #4e5c4f;
             color: #ffffff;
-            padding: 16px 40px;
+            padding: 18px 50px;
             text-decoration: none;
-            border-radius: 30px;
-            font-size: 0.95em;
+            font-size: 0.9em;
             font-weight: 500;
-            letter-spacing: 0.5px;
-            margin-top: 15px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(76, 99, 78, 0.15);
+            border: 1px solid #4e5c4f;
         }
         .btn-randevu:hover {
-            background-color: #384a39;
-            transform: translateY(-2px); /* Butonun hafifçe yukarı esnemesi */
-            box-shadow: 0 6px 20px rgba(76, 99, 78, 0.25);
+            background-color: transparent;
+            color: #4e5c4f;
         }
         footer {
             text-align: center;
             padding: 60px 20px;
-            font-size: 0.85em;
-            letter-spacing: 0.5px;
-            color: #9ba89c;
-            font-weight: 300;
+            font-size: 0.8em;
+            letter-spacing: 1px;
+            color: #8fa091;
+            border-top: 1px solid #e6e2d8;
+            background-color: #fbfbfa;
+        }
+        @media (max-width: 600px) {
+            .grid-areas { grid-template-columns: 1fr; }
+            nav { flex-wrap: wrap; padding: 10px 0; }
+            nav a { margin: 5px 10px; font-size: 0.75em; }
         }
     </style>
 </head>
 <body>
+
+    <!-- Üst Gezinme Menüsü -->
+    <nav>
+        <a href="#hakkimda">Kurumsal Alan</a>
+        <a href="#alanlar">Çalışma Alanları</a>
+        <a href="#egitimler">Eğitim & Sertifikalar</a>
+        <a href="#blog">Yazılar / Blog</a>
+        <a href="#randevu">İletişim</a>
+    </nav>
 
     <header>
         <h1 class="nav-brand">Psikolog Hümeyra Bayrak</h1>
@@ -106,13 +205,57 @@
     </header>
 
     <div class="container">
-        <div class="about-section">
-            <h2>Hakkımda</h2>
-            <p>Merhaba, ben Psikolog Hümeyra Bayrak. Lisans eğitimimi psikoloji bölümünde tamamladım. Çalışmalarıma etik ilkeler ve danışan gizliliğine tam bağlılık esasıyla, tamamen online (çevrimiçi) seanslar üzerinden devam etmekteyim.</p>
-            <p>Güvenli, yargısız ve profesyonel bir alanda online terapi süreçlerinizi yürütmek için aşağıdaki bağlantıyı kullanarak çalışma takvimimi inceleyebilir ve randevunuzu kolayca oluşturabilirsiniz.</p>
-            
-            <a href="#" class="btn-randevu">Online Randevu Alın</a>
+        
+        <!-- Kurumsal Alan / Hakkımda Sekmesi -->
+        <div id="hakkimda" class="section-card">
+            <h2>Kurumsal Alan</h2>
+            <p>Mesleki uygulamalarımı etik ilkeler, bilimsel temeller ve koşulsuz danışan gizliliği esasına dayandırarak sürdürmekteyim. Zaman ve mekan sınırlarını ortadan kaldıran online (çevrimiçi) danışmanlık modeliyle, sağlıklı ve güvenli bir dijital alanda profesyonel eşlik sağlamaktayım.</p>
         </div>
+
+        <!-- Çalışma Alanları Sekmesi -->
+        <div id="alanlar" class="section-card">
+            <h2>Çalışma Alanları</h2>
+            <p>Bireysel dinamikler ve dönemsel zorluklar çerçevesinde, danışanların kendilerini daha iyi anlamaları ve içsel dengelerini bulmaları adına profesyonel destek sunmaktayım. Temel çalışma alanlarımdan bazıları şunlardır:</p>
+            <div class="grid-areas">
+                <div class="area-item">Yetişkin Süreçleri ve Bireysel Dönüşüm</div>
+                <div class="area-item">Kaygı ve Stres Yönetimi</div>
+                <div class="area-item">İlişkisel Dinamikler ve İletişim</div>
+                <div class="area-item">Uyum ve Adaptasyon Zorlukları</div>
+            </div>
+        </div>
+
+        <!-- Eğitim & Sertifikalar Sekmesi -->
+        <div id="egitimler" class="section-card">
+            <h2>Eğitim & Sertifikalar</h2>
+            <ul class="edu-list">
+                <li class="edu-item">Psikoloji Lisans Eğitimi <span>Mezun Olduğunuz Üniversite Belirtilebilir</span></li>
+                <li class="edu-item">Bilişsel Davranışçı Terapi Eğitimi <span>Aldığınız Kurum / Eğitmen Bilgisi</span></li>
+                <li class="edu-item">Mesleki Gelişim ve Süpervizyon Süreçleri <span>Devam Eden Çalışmalar</span></li>
+            </ul>
+        </div>
+
+        <!-- Yazılar / Blog Sekmesi -->
+        <div id="blog" class="section-card">
+            <h2>Yazılar & Makaleler</h2>
+            
+            <div class="blog-post">
+                <span class="blog-date">11 Ekim 2026</span>
+                <h3 class="blog-title">Online Psikolojik Danışmanlığın Temelleri</h3>
+                <p>Gelişen teknolojiyle birlikte psikolojik destek süreçleri de dijital dünyaya adapte olmaktadır. Online seansların etkililiği, gizlilik standartları ve mekan bağımsızlığı danışan süreçlerine büyük bir konfor getirmektedir...</p>
+            </div>
+
+            <div class="blog-post">
+                <span class="blog-date">01 Ekim 2026</span>
+                <h3 class="blog-title">Modern Yaşamda Kaygı ve Stres Yönetimi</h3>
+                <p>Günlük hayatın getirdiği koşturmaca ve yoğun beklentiler, bireyler üzerinde dönemsel stres yükleri oluşturabilir. Bu süreçte farkındalık geliştirmek ve içsel sınırları tanımak dengede kalmanın ilk adımıdır...</p>
+            </div>
+        </div>
+
+        <!-- Randevu Butonu -->
+        <div id="randevu" class="btn-wrapper">
+            <a href="#" class="btn-randevu">Danışmanlık Randevusu Oluştur</a>
+        </div>
+
     </div>
 
     <footer>
