@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Psikolog Hümeyra Bayrak | Online Görüşmeler</title>
+    <title>Psikolog Hümeyra Bayrak | Online Psikolojik Danışmanlık</title>
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
     <link href="https://googleapis.com/css2?family=Cinzel:wght@400;500&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
@@ -13,150 +13,144 @@
             font-family: 'Montserrat', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f7f5f0; /* Yaren Hanım'ın Sitesindeki Yumuşak Krem Arka Plan */
-            color: #2b352c; 
+            background-color: #f7f6f2; /* Duru Krem Arka Plan */
+            color: #242e25; 
             line-height: 1.8;
         }
-        /* Elit Üst Menü Düzeni (Birebir İlham) */
-        nav {
+
+        /* --- GÖRSELDEKİ BİREBİR ÜST MENÜ DÜZENİ --- */
+        .fixed-header-wrapper {
             position: fixed;
             top: 0;
             width: 100%;
-            background-color: rgba(247, 245, 240, 0.95);
-            border-bottom: 1px solid #e1ded7;
             z-index: 1000;
-            display: flex;
-            justify-content: center;
-            padding: 20px 0;
+            box-shadow: 0 1px 10px rgba(0,0,0,0.02);
         }
-        nav a {
-            font-family: 'Montserrat', sans-serif;
+        /* 1. Katman: En Üst İnce Bilgi Şeridi */
+        .top-bar {
+            background-color: #242e25; /* Koyu Adaçayı/Siyah Tonu */
+            color: #eae6df;
+            font-size: 0.7em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 10px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .top-bar-left span { margin-right: 20px; }
+        .top-bar-right a { color: #eae6df; text-decoration: none; margin-left: 20px; }
+
+        /* 2. Katman: Ana Menü Çubuğu */
+        .main-nav {
+            background-color: #f7f6f2;
+            border-bottom: 1px solid #e1ded7;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+        }
+        /* Kodla Yapılmış Kibar Logo */
+        .logo-box {
+            font-family: 'Cinzel', serif;
+            font-size: 1.2em;
+            letter-spacing: 2px;
+            color: #242e25;
+            border: 1px solid #242e25;
+            padding: 4px 10px;
+            font-weight: 400;
+            text-decoration: none;
+        }
+        .nav-links { display: flex; align-items: center; }
+        .nav-links a {
             font-size: 0.75em;
             text-transform: uppercase;
             letter-spacing: 2px;
-            color: #556256;
+            color: #556657;
             text-decoration: none;
-            margin: 0 20px;
+            margin: 0 15px;
             font-weight: 500;
             transition: color 0.3s;
         }
-        nav a:hover { color: #2b352c; }
-        
-        /* Büyük Resim Olmayan, Temiz Giriş Alanı */
-        header {
-            padding: 180px 20px 120px 20px;
+        .nav-links a:hover { color: #242e25; }
+        /* Görseldeki İletişim Butonu */
+        .btn-nav-iletisim {
+            background-color: #8c585c; /* Görseldeki Mürdüm/Gül Kurusu Tonu */
+            color: #ffffff !important;
+            padding: 10px 25px;
+            margin-left: 15px !important;
+            transition: background 0.3s !important;
+        }
+        .btn-nav-iletisim:hover { background-color: #6e4245; }
+
+        /* --- SİTE İÇERİK ALANLARI --- */
+        header.hero-section {
+            background-color: #cbded0; /* Hakiki Mat Adaçayı Yeşili */
+            padding: 220px 20px 140px 20px; /* Üst menü payı eklendi */
             text-align: center;
-            background-color: #f7f5f0;
+            border-bottom: 1px solid #b8ccbe;
         }
         .nav-brand {
             font-family: 'Cinzel', serif;
-            font-size: 2.6em;
+            font-size: 2.8em;
             letter-spacing: 3px;
             font-weight: 400;
-            color: #2b352c;
+            color: #242e25;
             margin: 0;
         }
         .nav-subtitle {
             font-size: 0.85em;
             letter-spacing: 5px;
             text-transform: uppercase;
-            color: #6d7e6e; /* Asil Adaçayı Yeşili Vurgu */
+            color: #4a5c4c;
             margin-top: 20px;
             font-weight: 500;
         }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        .section-content {
-            padding: 60px 0;
-            border-bottom: 1px solid #e1ded7;
-        }
+        .container { max-width: 800px; margin: 0 auto; padding: 0 20px; }
+        .section-content { padding: 80px 0; border-bottom: 1px solid #e1ded7; scroll-margin-top: 120px; }
         h2 {
             font-family: 'Cinzel', serif;
             font-size: 1.4em;
-            color: #2b352c;
+            color: #242e25;
             margin-top: 0;
             margin-bottom: 30px;
             font-weight: 400;
             letter-spacing: 2px;
             text-transform: uppercase;
         }
-        p {
-            font-size: 1.05em;
-            color: #434e44;
-            font-weight: 300;
-            margin-bottom: 25px;
-        }
-        .sub-link {
-            color: #6d7e6e;
-            text-decoration: none;
-            font-weight: 500;
-            border-bottom: 1px solid #6d7e6e;
-            padding-bottom: 2px;
-        }
-        /* Çalışma Alanları Grid Yapısı */
-        .grid-areas {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 25px;
-            margin-top: 30px;
-        }
+        p { font-size: 1.05em; color: #384539; font-weight: 300; margin-bottom: 25px; }
+        .sub-link { color: #4a5c4c; text-decoration: none; font-weight: 500; border-bottom: 1px solid #4a5c4c; padding-bottom: 2px; }
+        
+        .grid-areas { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-top: 30px; }
         .area-item {
             background: #ffffff;
             padding: 30px;
             border: 1px solid #e1ded7;
             font-size: 0.95em;
-            color: #434e44;
+            color: #384539;
             font-weight: 400;
-            border-radius: 2px;
+            border-left: 4px solid #cbded0;
         }
-        /* Blog Bölümü */
-        .blog-post {
-            margin-bottom: 40px;
-        }
-        .blog-title {
-            font-family: 'Cinzel', serif;
-            font-size: 1.15em;
-            color: #2b352c;
-            margin: 0 0 10px 0;
-            font-weight: 400;
-        }
-        .blog-date {
-            font-size: 0.75em;
-            color: #8da08e;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            margin-bottom: 15px;
-            display: block;
-        }
-        /* SSS Alanı */
-        .faq-item {
-            margin-bottom: 25px;
-        }
-        .faq-question {
-            font-weight: 500;
-            color: #2b352c;
-            margin-bottom: 8px;
-        }
-        .faq-answer {
-            font-size: 0.95em;
-            color: #556256;
-            font-weight: 300;
-        }
-        /* Randevu Buton Alanı (Tam İstediğiniz Format) */
+        .blog-post { margin-bottom: 40px; }
+        .blog-title { font-family: 'Cinzel', serif; font-size: 1.15em; color: #242e25; margin: 0 0 10px 0; font-weight: 400; }
+        .blog-date { font-size: 0.75em; color: #6c806e; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 15px; display: block; }
+        
+        .faq-item { margin-bottom: 25px; }
+        .faq-question { font-weight: 500; color: #242e25; margin-bottom: 8px; }
+        .faq-answer { font-size: 0.95em; color: #4a5c4c; font-weight: 300; }
+        
         .randevu-box {
-            background-color: #f0ede6; /* Bir ton koyu yumuşak geçiş */
-            padding: 50px;
+            background-color: #e6edd8;
+            padding: 60px 40px;
             text-align: center;
-            border: 1px solid #e1ded7;
-            margin-top: 40px;
+            border: 1px solid #cbd6cb;
+            margin-top: 60px;
             margin-bottom: 80px;
+            scroll-margin-top: 140px;
         }
         .btn-randevu {
             display: inline-block;
-            background-color: #556256; /* Mat Adaçayı Yeşili */
+            background-color: #4a5c4c;
             color: #ffffff;
             padding: 18px 50px;
             text-decoration: none;
@@ -167,37 +161,63 @@
             transition: all 0.3s ease;
             margin-top: 15px;
         }
-        .btn-randevu:hover {
-            background-color: #2b352c;
-        }
+        .btn-randevu:hover { background-color: #242e25; }
+
+        /* Yasal KVKK ve Footer Alanı */
         footer {
             text-align: center;
-            padding: 50px 20px;
+            padding: 60px 20px;
             font-size: 0.75em;
             letter-spacing: 1px;
-            color: #8da08e;
+            color: #6c806e;
             border-top: 1px solid #e1ded7;
+            background-color: #f7f6f2;
         }
-        @media (max-width: 600px) {
+        .legal-links { margin-bottom: 20px; }
+        .legal-links a { color: #556657; text-decoration: none; margin: 0 10px; border-bottom: 1px dashed #556657; padding-bottom: 2px; }
+        .legal-links a:hover { color: #242e25; }
+
+        @media (max-width: 768px) {
+            .top-bar { display: none; } /* Mobilde üst ince barı gizle space açılsın */
+            .main-nav { flex-direction: column; padding: 15px 10px; }
+            .nav-links { flex-wrap: wrap; justify-content: center; margin-top: 15px; }
+            .nav-links a { margin: 5px 8px; font-size: 0.7em; }
             .grid-areas { grid-template-columns: 1fr; }
-            nav { flex-wrap: wrap; padding: 15px 0; }
-            nav a { margin: 5px 10px; font-size: 0.7em; }
         }
     </style>
 </head>
 <body>
 
-    <!-- Üst Menü -->
-    <nav>
-        <a href="#anasayfa">Ana Sayfa</a>
-        <a href="#hakkimda">Hakkımda</a>
-        <a href="#alanlar">Çalışma Alanları</a>
-        <a href="#blog">Blog</a>
-        <a href="#sss">SSS</a>
-        <a href="#randevu">Randevu Al</a>
-    </nav>
+    <!-- Çift Katmanlı Sabit Üst Menü Yapısı -->
+    <div class="fixed-header-wrapper">
+        <!-- 1. Katman: Bilgi Şeridi -->
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <span>Online Danışmanlık</span>
+                <span>Türkiye Geneli</span>
+            </div>
+            <div class="top-bar-right">
+                <span>Pzt-Cum 10:00-19:00</span>
+                <a href="tel:+905000000000">📞 İletişim</a>
+                <a href="https://wa.me" target="_blank">💬 WhatsApp</a>
+            </div>
+        </div>
+        <!-- 2. Katman: Ana Gezinme -->
+        <div class="main-nav">
+            <a href="#anasayfa" class="logo-box">HB</a>
+            <div class="nav-links">
+                <a href="#anasayfa">Ana Sayfa</a>
+                <a href="#hakkimda">Hakkımda</a>
+                <a href="#alanlar">Çalışma Alanları</a>
+                <a href="#blog">Blog</a>
+                <a href="#sss">SSS</a>
+                <a href="#randevu" class="btn-nav-iletisim">Randevu Al</a>
+            </div>
+        </div>
+    </div>
 
-    <header id="anasayfa">
+    <!-- Ana Giriş (Hero) -->
+    <header id="anasayfa" class="hero-section">
         <h1 class="nav-brand">Psikolog Hümeyra Bayrak</h1>
         <div class="nav-subtitle">Online Psikolojik Danışmanlık</div>
     </header>
@@ -207,14 +227,14 @@
         <!-- Hakkımda Bölümü -->
         <div id="hakkimda" class="section-content">
             <h2>Hakkımda</h2>
-            <p>Çalışmalarımı mesleki etik ilkeler, bilimsel temeller ve koşulsuz danışan gizliliği esasına dayandırarak sürdürmekteyim. Coğrafi sınırları ortadan kaldıran online (çevrimiçi) danışmanlık modeliyle, sağlıklı ve güvenli bir dijital alanda danışanlarıma profesyonel olarak eşlik etmekteyim.</p>
+            <p>Çaimalarımı mesleki etik ilkeler, bilimsel temeller ve koşulsuz danışan gizliliği esasına dayandırarak sürdürmekteyim. Coğrafi sınırları ortadan kaldıran online (çevrimiçi) danışmanlık modeliyle, sağlıklı ve güvenli bir dijital alanda danışanlarıma profesyonel olarak eşlik etmekteyim.</p>
             <p>Süreç hakkında daha detaylı bilgi edinmek için <a href="#alanlar" class="sub-link">çalışma alanlarımı inceleyebilir</a> veya doğrudan takvim üzerinden uygun günleri kontrol edebilirsiniz.</p>
         </div>
 
         <!-- Çalışma Alanları Bölümü -->
         <div id="alanlar" class="section-content">
             <h2>Çalışma Alanları</h2>
-            <p>14 yaş ve üzeri ergenlerle ve yetişkinlerle bireysel dinamikler; dönemsel tıkanıklıklar çerçevesinde online görüşmeler yürütmekteyim. Temel yoğunlaştığım alanlar:</p>
+            <p>Bireysel dinamikler ve dönemsel tıkanıklıklar çerçevesinde online görüşmeler yürütmekteyim. Temel yoğunlaştığım alanlar:</p>
             <div class="grid-areas">
                 <div class="area-item">Yetişkin Süreçleri ve Bireysel Dönüşüm</div>
                 <div class="area-item">Kaygı ve Stres Yönetimi</div>
@@ -228,41 +248,3 @@
             <h2>Blog & Yazılar</h2>
             <div class="blog-post">
                 <span class="blog-date">11 Ekim 2026</span>
-                <h3 class="blog-title">Online Psikolojik Danışmanlığın Temelleri</h3>
-                <p>Gelişen teknolojiyle birlikte psikolojik destek süreçleri de dijital dünyaya adapte olmaktadır. Çevrimiçi görüşmelerin etkililiği, gizlilik standartları ve mekan bağımsızlığı süreçlere konfor getirmektedir...</p>
-            </div>
-            <div class="blog-post">
-                <span class="blog-date">01 Ekim 2026</span>
-                <h3 class="blog-title">Modern Dünyada Sınırlar ve Dengede Kalmak</h3>
-                <p>Günlük hayatın getirdiği yoğun beklentiler, bireyler üzerinde dönemsel yükler oluşturabilir. Bu süreçte farkındalık geliştirmek ve içsel sınırları tanımak dengede kalmanın anahtarıdır...</p>
-            </div>
-        </div>
-
-        <!-- SSS Bölümü -->
-        <div id="sss" class="section-content">
-            <h2>Sıkça Sorulan Sorular</h2>
-            <div class="faq-item">
-                <div class="faq-question">1. Online görüşmeler nasıl gerçekleştiriliyor?</div>
-                <div class="faq-answer">Görüşmelerimiz, tamamen güvenli ve uçtan uca şifreli dijital platformlar üzerinden, görüntülü olarak gerçekleştirilmektedir. Sadece internet erişiminizin ve sessiz bir odanızın olması yeterlidir.</div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">2. İlk seanslarda süreç nasıl işler?</div>
-                <div class="faq-answer">İlk seanslar karşılıklı tanışma, başvuru nedenlerinizi değerlendirme ve danışmanlık sürecinin çerçevesini birlikte netleştirme dönemidir.</div>
-            </div>
-        </div>
-
-        <!-- Randevu Al Bölümü (Birebir İlham) -->
-        <div id="randevu" class="randevu-box">
-            <h2>İletişim ve Görüşme Talebi</h2>
-            <p>Çalışma takvimimi canlı olarak incelemek, uygun seans saatlerini görmek ve online randevunuzu saniyeler içinde rezerve etmek için aşağıdaki butonu kullanabilirsiniz.</p>
-            <a href="#" class="btn-randevu">Görüşme Randevusu Oluştur</a>
-        </div>
-
-    </div>
-
-    <footer>
-        &copy; 2026 Psikolog Hümeyra Bayrak. Tüm Hakları Saklıdır.
-    </footer>
-
-</body>
-</html>
