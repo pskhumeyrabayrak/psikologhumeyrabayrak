@@ -4,83 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Psikolog Hümeyra Bayrak | Online Terapi</title>
+    <!-- Profesyonel Yazı Tipleri -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Inter', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f7f5f0; /* Krem Arka Plan */
-            color: #2c3e2e; /* Koyu Orman Yeşili Yazı */
+            background-color: #fbf9f4; /* Yumuşak Premium Krem Arka Plan */
+            color: #2d3b2f; /* Çok Koyu Doğal Yeşil-Siyah Yazı */
+            line-height: 1.7;
         }
         header {
-            background-color: #e3ebd9; /* Yumuşak Adaçayı Yeşili */
-            padding: 80px 20px;
+            background-color: #f6f3eb; /* Bir Ton Koyu Krem Geçişi */
+            padding: 120px 20px 100px 20px;
             text-align: center;
-            border-bottom: 2px solid #d2ded0;
         }
-        header h1 {
+        .nav-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.6em;
+            letter-spacing: -0.5px;
+            font-weight: 400;
+            color: #243326; /* Ağır ve Saygın Orman Yeşili */
             margin: 0;
-            font-size: 2.8em;
-            color: #2c3e2e;
-            font-weight: 600;
         }
-        header p {
-            margin: 15px 0 0 0;
-            font-size: 1.3em;
-            color: #556b2f;
-            font-style: italic;
+        .nav-subtitle {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95em;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #657e67; /* Estetik Adaçayı Yeşili */
+            margin-top: 15px;
+            font-weight: 500;
         }
         .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 20px;
+            max-width: 750px;
+            margin: 60px auto;
+            padding: 0 25px;
         }
         .about-section {
             background: #ffffff;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-            border-left: 5px solid #a3b899;
+            padding: 50px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(45, 59, 47, 0.03); /* Çok hafif derinlik */
+            border: 1px solid #efebe1;
         }
         h2 {
-            color: #3b533e;
-            border-bottom: 1px solid #e3ebd9;
-            padding-bottom: 10px;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8em;
+            color: #243326;
+            margin-top: 0;
+            margin-bottom: 25px;
+            font-weight: 400;
+            font-style: italic; /* Tayfun beyin sitesindeki gibi zarif eğik duruş */
+        }
+        p {
+            font-size: 1.05em;
+            color: #4a574b;
+            margin-bottom: 20px;
+            font-weight: 300;
         }
         .btn-randevu {
             display: inline-block;
-            background-color: #556b2f;
-            color: white;
-            padding: 15px 35px;
+            background-color: #4c634e; /* Premium Mat Adaçayı */
+            color: #ffffff;
+            padding: 16px 40px;
             text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            margin-top: 20px;
-            transition: background 0.3s;
+            border-radius: 30px;
+            font-size: 0.95em;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(76, 99, 78, 0.15);
         }
         .btn-randevu:hover {
-            background-color: #3b533e;
+            background-color: #384a39;
+            transform: translateY(-2px); /* Butonun hafifçe yukarı esnemesi */
+            box-shadow: 0 6px 20px rgba(76, 99, 78, 0.25);
         }
         footer {
             text-align: center;
-            padding: 40px;
-            font-size: 0.9em;
-            color: #888;
+            padding: 60px 20px;
+            font-size: 0.85em;
+            letter-spacing: 0.5px;
+            color: #9ba89c;
+            font-weight: 300;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Psikolog Hümeyra Bayrak</h1>
-        <p>Online Psikolojik Danışmanlık </p>
+        <h1 class="nav-brand">Psikolog Hümeyra Bayrak</h1>
+        <div class="nav-subtitle">Online Psikolojik Danışmanlık & Terapi</div>
     </header>
 
     <div class="container">
         <div class="about-section">
             <h2>Hakkımda</h2>
             <p>Merhaba, ben Psikolog Hümeyra Bayrak. Lisans eğitimimi psikoloji bölümünde tamamladım. Çalışmalarıma etik ilkeler ve danışan gizliliğine tam bağlılık esasıyla, tamamen online (çevrimiçi) seanslar üzerinden devam etmekteyim.</p>
-            <p>Güvenli, yargısız ve profesyonel bir alanda online terapi süreçlerinizi yürütmek için aşağıdaki bağlantıdan randevunuzu oluşturabilirsiniz.</p>
+            <p>Güvenli, yargısız ve profesyonel bir alanda online terapi süreçlerinizi yürütmek için aşağıdaki bağlantıyı kullanarak çalışma takvimimi inceleyebilir ve randevunuzu kolayca oluşturabilirsiniz.</p>
             
             <a href="#" class="btn-randevu">Online Randevu Alın</a>
         </div>
